@@ -114,7 +114,7 @@ void setup(){
 
 void loop(){
   
-  MQTT_connect();
+  // MQTT_connect();
   
   display.clearDisplay();
   display.setCursor(0, 0);
@@ -137,7 +137,7 @@ void loop(){
   Serial.print("  IBI = ");
   Serial.println(IBI);
 
-  delay(2000);
+  // delay(2000);
   
   
   sendDataToProcessing('S', Signal);     // send Processing the raw Pulse Sensor data

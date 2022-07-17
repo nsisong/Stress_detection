@@ -20,7 +20,7 @@ void interruptSetup(){
 // Ticker makes sure that we take a reading every 2 miliseconds
 void ISRTr(){                         // triggered when flipper fires....
   cli();                               // disable interrupts while we do this
-  Signal = analogRead(A0);              // read the Pulse Sensor 
+  Signal = analogRead(0);              // read the Pulse Sensor 
   sampleCounter += 2;                         // keep track of the time in mS with this variable
   int N = sampleCounter - lastBeatTime;       // monitor the time since the last beat to avoid noise
 
